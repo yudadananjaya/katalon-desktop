@@ -18,7 +18,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\YUDADA~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\team account\\login\\teid-00001-as a user i can login with valid email and password\\20240622_173133\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\YUDADA~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\team account\\login\\teid-00001-as a user i can login with valid email and password\\20240622_180516\\execution.properties')
 
 TestCaseMain.beforeStart()
 
