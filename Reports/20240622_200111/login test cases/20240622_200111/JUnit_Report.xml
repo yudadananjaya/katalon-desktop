@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="login test cases" time="24.278" tests="2" failures="0" errors="0">
+   <testsuite name="login test cases" tests="2" failures="0" errors="0" time="24.278" skipped="0" timestamp="22-06-2024T20:01:13" hostname="Yuda Danan Jaya - host.docker.internal" id="Test Suites/login test cases">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\Yuda Danan Jaya\\Katalon Studio\\katalon-desktop-paper-id\\Reports\\20240622_200111\\login test cases\\20240622_200111"/>
+         <property name="logFiles" value="C:\\Users\\Yuda Danan Jaya\\Katalon Studio\\katalon-desktop-paper-id\\Reports\\20240622_200111\\login test cases\\20240622_200111\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Yuda Danan Jaya - host.docker.internal"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="9.6.0.217"/>
+         <property name="browser" value="Chrome 126.0.0.0"/>
+         <property name="hostAddress" value="192.168.1.2"/>
+         <property name="sessionId" value="280a501cc22c5150379db593dc8ef81c"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/team account/login/teid-00001-as a user i can login with valid email and password" time="16.423" classname="Test Cases/team account/login/teid-00001-as a user i can login with valid email and password" status="PASSED">
+         <system-out><![CDATA[22-06-2024T20:01:13 - [TEST_CASE][PASSED] - Test Cases/team account/login/teid-00001-as a user i can login with valid email and password: Test Cases/team account/login/teid-00001-as a user i can login with valid email and password
+
+22-06-2024T20:01:14 - [TEST_STEP][PASSED] - email = findTestData("team account/" + environment + "/account").getValue(1, 1): null
+
+22-06-2024T20:01:14 - [TEST_STEP][PASSED] - password = findTestData("team account/" + environment + "/account").getValue(2, 1): null
+
+22-06-2024T20:01:14 - [TEST_STEP][PASSED] - expectedUserName = findTestData("team account/" + environment + "/account").getValue(3, 1): null
+
+22-06-2024T20:01:14 - [TEST_STEP][PASSED] - callTestCase(findTestCase("pages/general/open browser and go to url dynamic"), ["url":urlBase], STOP_ON_FAILURE): Call Test Case 'Test Cases/pages/general/open browser and go to url dynamic' successfully
+
+22-06-2024T20:01:14 - [TEST_CASE][PASSED] - Test Cases/pages/general/open browser and go to url dynamic: Test Cases/pages/general/open browser and go to url dynamic
+
+22-06-2024T20:01:14 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+22-06-2024T20:01:14 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+22-06-2024T20:01:14 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+22-06-2024T20:01:15 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+22-06-2024T20:01:15 - [TEST_STEP][PASSED] - navigateToUrl(url): Navigate to 'https://www.paper.id/webappv1/#/login' successfully
+
+22-06-2024T20:01:19 - [MESSAGE][PASSED] - Navigate to 'https://www.paper.id/webappv1/#/login' successfully
+
+22-06-2024T20:01:19 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+22-06-2024T20:01:19 - [MESSAGE][PASSED] - Current window maximized
+
+22-06-2024T20:01:19 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/pages/general/open browser and go to url dynamic' successfully
+
+22-06-2024T20:01:19 - [TEST_STEP][PASSED] - callTestCase(findTestCase("pages/login/fill email and click submit button"), ["email":email], STOP_ON_FAILURE): Call Test Case 'Test Cases/pages/login/fill email and click submit button' successfully
+
+22-06-2024T20:01:19 - [TEST_CASE][PASSED] - Test Cases/pages/login/fill email and click submit button: Test Cases/pages/login/fill email and click submit button
+
+22-06-2024T20:01:19 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("login/input_login_email"), waitPageFast): Object 'Object Repository/login/input_login_email' is visible
+
+22-06-2024T20:01:21 - [MESSAGE][PASSED] - Object 'Object Repository/login/input_login_email' is visible
+
+22-06-2024T20:01:21 - [TEST_STEP][PASSED] - setText(findTestObject("login/input_login_email"), email): Text 'kandidat@paper.id' is set on object 'Object Repository/login/input_login_email'
+
+22-06-2024T20:01:21 - [MESSAGE][PASSED] - Text 'kandidat@paper.id' is set on object 'Object Repository/login/input_login_email'
+
+22-06-2024T20:01:21 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("login/button_submit_email"), waitPageFast): Object 'Object Repository/login/button_submit_email' is clickable
+
+22-06-2024T20:01:22 - [MESSAGE][PASSED] - Object 'Object Repository/login/button_submit_email' is clickable
+
+22-06-2024T20:01:22 - [TEST_STEP][PASSED] - click(findTestObject("login/button_submit_email")): Object: 'Object Repository/login/button_submit_email' is clicked on
+
+22-06-2024T20:01:22 - [MESSAGE][PASSED] - Object: 'Object Repository/login/button_submit_email' is clicked on
+
+22-06-2024T20:01:22 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/pages/login/fill email and click submit button' successfully
+
+22-06-2024T20:01:22 - [TEST_STEP][PASSED] - callTestCase(findTestCase("pages/login/fill password and click login button"), ["password":password], STOP_ON_FAILURE): Call Test Case 'Test Cases/pages/login/fill password and click login button' successfully
+
+22-06-2024T20:01:22 - [TEST_CASE][PASSED] - Test Cases/pages/login/fill password and click login button: Test Cases/pages/login/fill password and click login button
+
+22-06-2024T20:01:22 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("login/input_login_password"), waitPageFast): Object 'Object Repository/login/input_login_password' is visible
+
+22-06-2024T20:01:22 - [MESSAGE][PASSED] - Object 'Object Repository/login/input_login_password' is visible
+
+22-06-2024T20:01:22 - [TEST_STEP][PASSED] - click(findTestObject("login/input_login_password")): Object: 'Object Repository/login/input_login_password' is clicked on
+
+22-06-2024T20:01:23 - [MESSAGE][PASSED] - Object: 'Object Repository/login/input_login_password' is clicked on
+
+22-06-2024T20:01:23 - [TEST_STEP][PASSED] - setText(findTestObject("login/input_login_password"), password): Text 'paper.id' is set on object 'Object Repository/login/input_login_password'
+
+22-06-2024T20:01:23 - [MESSAGE][PASSED] - Text 'paper.id' is set on object 'Object Repository/login/input_login_password'
+
+22-06-2024T20:01:23 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("login/button_login"), waitPageFast): Object 'Object Repository/login/button_login' is clickable
+
+22-06-2024T20:01:24 - [MESSAGE][PASSED] - Object 'Object Repository/login/button_login' is clickable
+
+22-06-2024T20:01:24 - [TEST_STEP][PASSED] - click(findTestObject("login/button_login")): Object: 'Object Repository/login/button_login' is clicked on
+
+22-06-2024T20:01:24 - [MESSAGE][PASSED] - Object: 'Object Repository/login/button_login' is clicked on
+
+22-06-2024T20:01:24 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/home/span_sidebar_menu_dashboard"), waitPageFast, CONTINUE_ON_FAILURE): Object 'Object Repository/home/span_sidebar_menu_dashboard' is present
+
+22-06-2024T20:01:28 - [MESSAGE][PASSED] - Object 'Object Repository/home/span_sidebar_menu_dashboard' is present
+
+22-06-2024T20:01:28 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/pages/login/fill password and click login button' successfully
+
+22-06-2024T20:01:28 - [TEST_STEP][PASSED] - callTestCase(findTestCase("pages/home/verify expected username in home page"), ["expectedUserName":expectedUserName], STOP_ON_FAILURE): Call Test Case 'Test Cases/pages/home/verify expected username in home page' successfully
+
+22-06-2024T20:01:28 - [TEST_CASE][PASSED] - Test Cases/pages/home/verify expected username in home page: Test Cases/pages/home/verify expected username in home page
+
+22-06-2024T20:01:28 - [TEST_STEP][PASSED] - actualName = getText(findTestObject("home/span_username_dynamic"), CONTINUE_ON_FAILURE): Text of object 'Object Repository/home/span_username_dynamic' is: 'Kandidat QA 00001'
+
+22-06-2024T20:01:30 - [MESSAGE][PASSED] - Text of object 'Object Repository/home/span_username_dynamic' is: 'Kandidat QA 00001'
+
+22-06-2024T20:01:30 - [TEST_STEP][PASSED] - verifyEqual(actualName, expectedUserName, CONTINUE_ON_FAILURE): Actual object 'Kandidat QA 00001' and expected object 'Kandidat QA 00001' are equal
+
+22-06-2024T20:01:30 - [MESSAGE][PASSED] - Actual object 'Kandidat QA 00001' and expected object 'Kandidat QA 00001' are equal
+
+22-06-2024T20:01:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/pages/home/verify expected username in home page' successfully
+
+22-06-2024T20:01:30 - [TEST_STEP][PASSED] - callTestCase(findTestCase("pages/general/after test case close browser"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/pages/general/after test case close browser' successfully
+
+22-06-2024T20:01:30 - [TEST_CASE][PASSED] - Test Cases/pages/general/after test case close browser: Test Cases/pages/general/after test case close browser
+
+22-06-2024T20:01:30 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+22-06-2024T20:01:30 - [MESSAGE][PASSED] - Browser is closed
+
+22-06-2024T20:01:30 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/pages/general/after test case close browser' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/team account/login/teid-00002-as a user i cant login using unregistered credentials" time="7.742" classname="Test Cases/team account/login/teid-00002-as a user i cant login using unregistered credentials" status="PASSED">
+         <system-out><![CDATA[22-06-2024T20:01:30 - [TEST_CASE][PASSED] - Test Cases/team account/login/teid-00002-as a user i cant login using unregistered credentials: Test Cases/team account/login/teid-00002-as a user i cant login using unregistered credentials
+
+22-06-2024T20:01:30 - [TEST_STEP][PASSED] - email = findTestData("team account/" + environment + "/account").getValue(1, 2): null
+
+22-06-2024T20:01:30 - [TEST_STEP][PASSED] - callTestCase(findTestCase("pages/general/open browser and go to url dynamic"), ["url":urlBase], STOP_ON_FAILURE): Call Test Case 'Test Cases/pages/general/open browser and go to url dynamic' successfully
+
+22-06-2024T20:01:30 - [TEST_CASE][PASSED] - Test Cases/pages/general/open browser and go to url dynamic: Test Cases/pages/general/open browser and go to url dynamic
+
+22-06-2024T20:01:30 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+22-06-2024T20:01:30 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+22-06-2024T20:01:30 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+22-06-2024T20:01:31 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+22-06-2024T20:01:31 - [TEST_STEP][PASSED] - navigateToUrl(url): Navigate to 'https://www.paper.id/webappv1/#/login' successfully
+
+22-06-2024T20:01:34 - [MESSAGE][PASSED] - Navigate to 'https://www.paper.id/webappv1/#/login' successfully
+
+22-06-2024T20:01:34 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+22-06-2024T20:01:34 - [MESSAGE][PASSED] - Current window maximized
+
+22-06-2024T20:01:34 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/pages/general/open browser and go to url dynamic' successfully
+
+22-06-2024T20:01:34 - [TEST_STEP][PASSED] - callTestCase(findTestCase("pages/login/fill email and click submit button"), ["email":email], STOP_ON_FAILURE): Call Test Case 'Test Cases/pages/login/fill email and click submit button' successfully
+
+22-06-2024T20:01:34 - [TEST_CASE][PASSED] - Test Cases/pages/login/fill email and click submit button: Test Cases/pages/login/fill email and click submit button
+
+22-06-2024T20:01:34 - [TEST_STEP][PASSED] - waitForElementVisible(findTestObject("login/input_login_email"), waitPageFast): Object 'Object Repository/login/input_login_email' is visible
+
+22-06-2024T20:01:35 - [MESSAGE][PASSED] - Object 'Object Repository/login/input_login_email' is visible
+
+22-06-2024T20:01:35 - [TEST_STEP][PASSED] - setText(findTestObject("login/input_login_email"), email): Text 'candidate@paper.id' is set on object 'Object Repository/login/input_login_email'
+
+22-06-2024T20:01:36 - [MESSAGE][PASSED] - Text 'candidate@paper.id' is set on object 'Object Repository/login/input_login_email'
+
+22-06-2024T20:01:36 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("login/button_submit_email"), waitPageFast): Object 'Object Repository/login/button_submit_email' is clickable
+
+22-06-2024T20:01:36 - [MESSAGE][PASSED] - Object 'Object Repository/login/button_submit_email' is clickable
+
+22-06-2024T20:01:36 - [TEST_STEP][PASSED] - click(findTestObject("login/button_submit_email")): Object: 'Object Repository/login/button_submit_email' is clicked on
+
+22-06-2024T20:01:36 - [MESSAGE][PASSED] - Object: 'Object Repository/login/button_submit_email' is clicked on
+
+22-06-2024T20:01:36 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/pages/login/fill email and click submit button' successfully
+
+22-06-2024T20:01:36 - [TEST_STEP][PASSED] - callTestCase(findTestCase("pages/login/verify error message toaster"), ["text":text], STOP_ON_FAILURE): Call Test Case 'Test Cases/pages/login/verify error message toaster' successfully
+
+22-06-2024T20:01:37 - [TEST_CASE][PASSED] - Test Cases/pages/login/verify error message toaster: Test Cases/pages/login/verify error message toaster
+
+22-06-2024T20:01:37 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("login/div_error_message_toaster", ["text":text]), 2, STOP_ON_FAILURE): Object 'Object Repository/login/div_error_message_toaster' is present
+
+22-06-2024T20:01:37 - [MESSAGE][PASSED] - Object 'Object Repository/login/div_error_message_toaster' is present
+
+22-06-2024T20:01:37 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/pages/login/verify error message toaster' successfully
+
+22-06-2024T20:01:37 - [TEST_STEP][PASSED] - callTestCase(findTestCase("pages/general/after test case close browser"), [:], STOP_ON_FAILURE): Call Test Case 'Test Cases/pages/general/after test case close browser' successfully
+
+22-06-2024T20:01:37 - [TEST_CASE][PASSED] - Test Cases/pages/general/after test case close browser: Test Cases/pages/general/after test case close browser
+
+22-06-2024T20:01:37 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+22-06-2024T20:01:38 - [MESSAGE][PASSED] - Browser is closed
+
+22-06-2024T20:01:38 - [MESSAGE][PASSED] - Call Test Case 'Test Cases/pages/general/after test case close browser' successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[22-06-2024T20:01:13 - [TEST_SUITE][PASSED] - login test cases: Test Cases/team account/login/teid-00002-as a user i cant login using unregistered credentials]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

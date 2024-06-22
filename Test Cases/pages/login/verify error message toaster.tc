@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>verify error message toaster</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>5a08c12f-c4a1-4898-b122-0f403ca2be87</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ded0bdd6-8fcc-4d34-92e1-aa2f5b0d56d6</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ded0bdd6-8fcc-4d34-92e1-aa2f5b0d56d6</id>
+      <masked>false</masked>
+      <name>text</name>
+   </variable>
+</TestCaseEntity>
