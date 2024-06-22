@@ -22,12 +22,12 @@ import org.openqa.selenium.Keys as Keys
  * Updated by	: -
  * Updated Date	: -
  * Summary		:
- * 1. this is page action use for login using email and password
+ * 1. this is page action use for set login email and click submit email button
  * */
 
-WebUI.waitForElementVisible(findTestObject('login/txt_phone_or_email'), GlobalVariable.waitPageFast)
+WebUI.waitForElementVisible(findTestObject('login/input_login_email'), GlobalVariable.waitPageFast)
 
-WebUI.setText(findTestObject('login/txt_phone_or_email'), email)
+WebUI.setText(findTestObject('login/input_login_email'), email)
 
 WebUI.waitForElementClickable(findTestObject('login/button_submit_email'), GlobalVariable.waitPageFast)
 

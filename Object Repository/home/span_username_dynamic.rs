@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_email</name>
+   <name>span_username_dynamic</name>
    <tag></tag>
-   <elementGuidId>8e7f14a5-c52a-4b99-add2-5755952c6f71</elementGuidId>
+   <elementGuidId>dc70305d-a96a-4957-8895-58a0c257c892</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@name='email']</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//input[@name='email']</value>
+         <value>(//button[@id='single-button']//span)[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -22,7 +18,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@name='email']</value>
-      <webElementGuid>f7a72108-5b0a-40d1-8482-4baf9c783137</webElementGuid>
+      <value>(//button[@id='single-button']//span)[2]</value>
+      <webElementGuid>d3b17bfb-0a27-489c-ac0c-dab85f74d4e7</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

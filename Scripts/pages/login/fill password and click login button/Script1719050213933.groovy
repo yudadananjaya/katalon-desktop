@@ -22,23 +22,17 @@ import org.openqa.selenium.Keys as Keys
  * Updated by	: -
  * Updated Date	: -
  * Summary		:
- * 1. script for automating success login test case
+ * 1. this is page action use for set password and click login button
  * */
 
-def email = findTestData(('team account/' + GlobalVariable.environment) + '/account').getValue(1, 1)
+WebUI.waitForElementVisible(findTestObject('login/input_login_password'), GlobalVariable.waitPageFast)
 
-def password = findTestData(('team account/' + GlobalVariable.environment) + '/account').getValue(2, 1)
+WebUI.click(findTestObject('login/input_login_password'))
 
-def expectedUserName = findTestData(('team account/' + GlobalVariable.environment) + '/account').getValue(3, 1)
+WebUI.setText(findTestObject('login/input_login_password'), password)
 
-'Open Browser and navigate to url'
-WebUI.callTestCase(findTestCase('pages/general/open browser and go to url dynamic'), [('url') : GlobalVariable.urlBase], FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementClickable(findTestObject('login/button_login'), GlobalVariable.waitPageFast)
 
-'Fill email and click submit button'
-WebUI.callTestCase(findTestCase('pages/login/fill email and click submit button'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('login/button_login'))
 
-'Fill password and click login button'
-WebUI.callTestCase(findTestCase('pages/login/fill password and click login button'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
-
-'Verify username in home page after success login'
-WebUI.callTestCase(findTestCase('pages/home/verify expected username in home page'), [('expectedUserName') : expectedUserName], FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('Object Repository/home/span_sidebar_menu_dashboard'), GlobalVariable.waitPageFast, FailureHandling.CONTINUE_ON_FAILURE)
