@@ -22,23 +22,11 @@ import org.openqa.selenium.Keys as Keys
  * Updated by	: -
  * Updated Date	: -
  * Summary		:
- * 1. script for automating success login test case
+ * 1. this is page action use for username assertion process in home page.
  * */
 
-def email = findTestData(('team account/' + GlobalVariable.environment) + '/account').getValue(1, 1)
+'Get actual username'
+def actualName = WebUI.getText(findTestObject('home/span_username_dynamic'), FailureHandling.CONTINUE_ON_FAILURE)
 
-def password = findTestData(('team account/' + GlobalVariable.environment) + '/account').getValue(2, 1)
-
-def expectedUserName = findTestData(('team account/' + GlobalVariable.environment) + '/account').getValue(3, 1)
-
-'Open Browser and navigate to url'
-WebUI.callTestCase(findTestCase('pages/general/open browser and go to url dynamic'), [('url') : GlobalVariable.urlBase], FailureHandling.STOP_ON_FAILURE)
-
-'Fill email and click submit button'
-WebUI.callTestCase(findTestCase('pages/login/fill email and click submit button'), [('email') : email], FailureHandling.STOP_ON_FAILURE)
-
-'Fill password and click login button'
-WebUI.callTestCase(findTestCase('pages/login/fill password and click login button'), [('password') : password], FailureHandling.STOP_ON_FAILURE)
-
-'Verify username in home page after success login'
-WebUI.callTestCase(findTestCase('pages/home/verify expected username in home page'), [('expectedUserName') : expectedUserName], FailureHandling.STOP_ON_FAILURE)
+'Assert username'
+WebUI.verifyEqual(actualName, expectedUserName, FailureHandling.CONTINUE_ON_FAILURE)
