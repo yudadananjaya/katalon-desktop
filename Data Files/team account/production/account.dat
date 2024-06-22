@@ -10,20 +10,21 @@
    <dataSourceUrl></dataSourceUrl>
    <driver>InternalData</driver>
    <data>kandidat%40paper.id paper.id Kandidat+QA+00001</data>
+   <data>candidate%40paper.id null null</data>
    <internalDataColumns>
       <columnIndex>0</columnIndex>
       <name>email</name>
-      <size>1</size>
+      <size>2</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>1</columnIndex>
       <name>password</name>
-      <size>1</size>
+      <size>2</size>
    </internalDataColumns>
    <internalDataColumns>
       <columnIndex>2</columnIndex>
       <name>username</name>
-      <size>1</size>
+      <size>2</size>
    </internalDataColumns>
    <isInternalPath>false</isInternalPath>
    <query></query>

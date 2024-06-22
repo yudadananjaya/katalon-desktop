@@ -1,0 +1,19 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+login test cases,Chrome 126.0.0.0,,,22-06-2024 20:01:13,22-06-2024 20:01:38,24.278s,PASSED
+,,,,,,,
+Test Cases/team account/login/teid-00001-as a user i can login with valid email and password,Chrome 126.0.0.0,,,22-06-2024 20:01:13,22-06-2024 20:01:30,16.423s,PASSED
+"email = findTestData(""team account/"" + environment + ""/account"").getValue(1, 1)",Chrome 126.0.0.0,,,22-06-2024 20:01:14,22-06-2024 20:01:14,0.132s,PASSED
+"password = findTestData(""team account/"" + environment + ""/account"").getValue(2, 1)",Chrome 126.0.0.0,,,22-06-2024 20:01:14,22-06-2024 20:01:14,0.006s,PASSED
+"expectedUserName = findTestData(""team account/"" + environment + ""/account"").getValue(3, 1)",Chrome 126.0.0.0,,,22-06-2024 20:01:14,22-06-2024 20:01:14,0.008s,PASSED
+"callTestCase(findTestCase(""pages/general/open browser and go to url dynamic""), [""url"":urlBase], STOP_ON_FAILURE)",Chrome 126.0.0.0,Open Browser and navigate to url,,22-06-2024 20:01:14,22-06-2024 20:01:19,5.200s,PASSED
+"callTestCase(findTestCase(""pages/login/fill email and click submit button""), [""email"":email], STOP_ON_FAILURE)",Chrome 126.0.0.0,Fill email and click submit button,,22-06-2024 20:01:19,22-06-2024 20:01:22,2.920s,PASSED
+"callTestCase(findTestCase(""pages/login/fill password and click login button""), [""password"":password], STOP_ON_FAILURE)",Chrome 126.0.0.0,Fill password and click login button,,22-06-2024 20:01:22,22-06-2024 20:01:28,5.632s,PASSED
+"callTestCase(findTestCase(""pages/home/verify expected username in home page""), [""expectedUserName"":expectedUserName], STOP_ON_FAILURE)",Chrome 126.0.0.0,Verify username in home page after success login,,22-06-2024 20:01:28,22-06-2024 20:01:30,2.041s,PASSED
+"callTestCase(findTestCase(""pages/general/after test case close browser""), [:], STOP_ON_FAILURE)",Chrome 126.0.0.0,Close browser,,22-06-2024 20:01:30,22-06-2024 20:01:30,0.268s,PASSED
+,,,,,,,
+Test Cases/team account/login/teid-00002-as a user i cant login using unregistered credentials,Chrome 126.0.0.0,,,22-06-2024 20:01:30,22-06-2024 20:01:38,7.742s,PASSED
+"email = findTestData(""team account/"" + environment + ""/account"").getValue(1, 2)",Chrome 126.0.0.0,,,22-06-2024 20:01:30,22-06-2024 20:01:30,0.007s,PASSED
+"callTestCase(findTestCase(""pages/general/open browser and go to url dynamic""), [""url"":urlBase], STOP_ON_FAILURE)",Chrome 126.0.0.0,Open Browser and navigate to url,,22-06-2024 20:01:30,22-06-2024 20:01:34,4.074s,PASSED
+"callTestCase(findTestCase(""pages/login/fill email and click submit button""), [""email"":email], STOP_ON_FAILURE)",Chrome 126.0.0.0,Fill unregistered email and click submit button,,22-06-2024 20:01:34,22-06-2024 20:01:36,2.499s,PASSED
+"callTestCase(findTestCase(""pages/login/verify error message toaster""), [""text"":text], STOP_ON_FAILURE)",Chrome 126.0.0.0,Verify unregistered email error message toaster in login page,,22-06-2024 20:01:36,22-06-2024 20:01:37,0.870s,PASSED
+"callTestCase(findTestCase(""pages/general/after test case close browser""), [:], STOP_ON_FAILURE)",Chrome 126.0.0.0,Close browser,,22-06-2024 20:01:37,22-06-2024 20:01:38,0.219s,PASSED
