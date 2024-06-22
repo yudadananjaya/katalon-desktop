@@ -42,3 +42,6 @@ WebUI.callTestCase(findTestCase('pages/login/fill password and click login butto
 
 'Verify username in home page after success login'
 WebUI.callTestCase(findTestCase('pages/home/verify expected username in home page'), [('expectedUserName') : expectedUserName], FailureHandling.STOP_ON_FAILURE)
+
+'Close browser'
+WebUI.callTestCase(findTestCase('pages/general/after test case close browser'), [:], FailureHandling.STOP_ON_FAILURE)
