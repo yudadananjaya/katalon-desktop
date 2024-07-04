@@ -25,11 +25,11 @@ import org.openqa.selenium.Keys as Keys
  * 1. script for automating success login test case
  * */
 
-def email = findTestData(('team account/' + GlobalVariable.environment) + '/account').getValue(1, 1)
+def email = findTestData(('team account/' + GlobalVariable.environment) + '/account').getValue(1, 3)
 
-def password = findTestData(('team account/' + GlobalVariable.environment) + '/account').getValue(2, 1)
+def password = findTestData(('team account/' + GlobalVariable.environment) + '/account').getValue(2, 3)
 
-def expectedUserName = findTestData(('team account/' + GlobalVariable.environment) + '/account').getValue(3, 1)
+def expectedUserName = findTestData(('team account/' + GlobalVariable.environment) + '/account').getValue(3, 3)
 
 'Open Browser and navigate to url'
 WebUI.callTestCase(findTestCase('pages/general/open browser and go to url dynamic'), [('url') : GlobalVariable.urlBase], FailureHandling.STOP_ON_FAILURE)
